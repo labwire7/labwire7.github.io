@@ -8,16 +8,57 @@ topics: "dontknow"
 ---
 
 ## First paragraph
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed odio morbi quis commodo odio. Aliquam nulla facilisi cras fermentum odio. Et netus et malesuada fames ac turpis egestas. Ornare arcu odio ut sem. Gravida quis blandit turpis cursus in hac habitasse platea. Lobortis elementum nibh tellus molestie nunc non blandit massa. Nisl purus in mollis nunc sed id. Eget magna fermentum iaculis eu non diam. Sem et tortor consequat id porta. Tincidunt vitae semper quis lectus nulla at volutpat. Neque convallis a cras semper auctor neque vitae. Viverra mauris in aliquam sem fringilla ut morbi. Fringilla est ullamcorper eget nulla. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Posuere ac ut consequat semper. Tincidunt vitae semper quis lectus nulla at. A pellentesque sit amet porttitor eget dolor morbi non.
+**Lorem ipsum dolor** sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed odio morbi quis commodo odio. _Aliquam nulla facilisi_ cras fermentum odio. Et netus et malesuada fames ac turpis egestas. Ornare arcu odio ut sem. Gravida quis blandit turpis cursus in hac habitasse platea. Lobortis elementum nibh tellus molestie nunc non blandit massa. Nisl purus in mollis nunc sed id. Eget `magna fermentum` iaculis eu non diam. Sem et tortor consequat id porta. Tincidunt vitae semper quis lectus nulla at volutpat. Neque convallis a cras semper auctor neque vitae. Viverra mauris in aliquam sem fringilla ut morbi. Fringilla est ullamcorper eget nulla. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Posuere ac ut consequat semper. Tincidunt vitae semper quis lectus nulla at. A pellentesque sit amet porttitor eget dolor morbi non.
 
 ## Second paragraph
 Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Elementum facilisis leo vel fringilla est ullamcorper eget. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Diam quam nulla porttitor massa id neque. Ullamcorper malesuada proin libero nunc. Lectus vestibulum mattis ullamcorper velit sed. Etiam erat velit scelerisque in dictum non consectetur. Dui sapien eget mi proin sed libero enim sed faucibus. Eu turpis egestas pretium aenean.
 
 ## Python code
-
 ```python
-print("Hello,World")
+#!/usr/bin/env python3
+import requests
+
+def hi(string):
+    print(string)
+
+url = "http://example.com"
+req = requests.get(url)
+print(req.status_code)
+
+hi("Hello,World!")
 ```
+
+## Chart
+{{< chart >}}
+type: 'bar',
+data: {
+  labels: ['Tomato', 'Blueberry', 'Banana', 'Lime', 'Orange'],
+  datasets: [{
+    label: '# of votes',
+    data: [12, 19, 3, 5, 3],
+  }]
+}
+{{< /chart >}}
+
+## Button
+{{< button href="#button" target="_self" >}}
+Call to action
+{{< /button >}}
+
+## Image 1
+![Simple Text](/assets/img/testing_background.jpg)
+
+## Image 2
+{{< figure
+    src="abstract.jpg"
+    alt="Abstract purple artwork"
+    caption="Photo by [Jr Korpa](https://unsplash.com/@jrkorpa) on [Unsplash](https://unsplash.com/)"
+    >}}
+
+<!-- OR -->
+
+![Abstract purple artwork](abstract.jpg "Photo by [Jr Korpa](https://unsplash.com/@jrkorpa) on [Unsplash](https://unsplash.com/)")
+
 
 ## Third paragraph
 Mi tempus imperdiet nulla malesuada. Enim sit amet venenatis urna cursus eget. Ante in nibh mauris cursus mattis molestie. Netus et malesuada fames ac turpis. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Sed ullamcorper morbi tincidunt ornare massa eget. Viverra adipiscing at in tellus. Id ornare arcu odio ut sem nulla pharetra diam sit. Convallis posuere morbi leo urna molestie at. Maecenas volutpat blandit aliquam etiam erat velit. A pellentesque sit amet porttitor eget dolor morbi. Turpis nunc eget lorem dolor sed viverra. Vel eros donec ac odio tempor orci. Urna molestie at elementum eu. Sed libero enim sed faucibus turpis in eu. Ullamcorper morbi tincidunt ornare massa eget egestas. Integer vitae justo eget magna fermentum. In dictum non consectetur a erat. Ipsum dolor sit amet consectetur.
